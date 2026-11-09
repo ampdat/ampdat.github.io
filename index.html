@@ -1,16 +1,100 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
-        <title>Amplified Data Systems</title>
-        <link rel="stylesheet" type="text/css" href="global.css"/>
-    </head>
-    <body>
-        <center>
-          <br/>
-          <br/>
-          <br/>
-          <img src="ampdat_logo.png" style="width: 160px; height: 210px"/>
-        </center>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ampdat</title>
+<meta name="description" content="Ampdat builds data products that pull the one fact that matters out of everything on chain.">
+<link rel="icon" type="image/svg+xml" href="icon-small.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#16181d">
+<meta property="og:title" content="Ampdat">
+<meta property="og:description" content="Amplified data: the one bit that matters, out of everything on chain.">
+<meta property="og:image" content="https://www.ampdat.com/og-ampdat.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root { --bg:#f6f5f0; --card:#ffffff; --fg:#16181d; --muted:#5f5e5a; --faint:#8a8983; --line:#e4e2da;
+  --signal:#ff4d2e; --signal-text:#c8371a; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16181d; --card:#1f2127; --fg:#eceae4; --muted:#b4b2a9;
+  --faint:#888780; --line:#2c2e35; --signal-text:#ff6b4f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif; }
+a { color:inherit; }
+.wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
+header { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
+.brand { display:flex; align-items:center; gap:10px; text-decoration:none; font-size:22px; font-weight:600; letter-spacing:-0.02em; }
+.brand img { width:32px; height:32px; display:block; }
+nav a { margin-left:24px; font-size:15px; color:var(--muted); text-decoration:none; }
+nav a:hover { color:var(--fg); }
+.hero { padding:96px 0 88px; }
+.hero picture img { width:min(560px, 100%); height:auto; display:block; margin-bottom:56px; }
+h1 { font-size:clamp(40px, 6vw, 64px); line-height:1.05; letter-spacing:-0.035em; font-weight:600; margin:0 0 20px; max-width:14ch; }
+.lede { font-size:20px; color:var(--muted); max-width:36em; margin:0; }
+h2 { font-size:13px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--faint); margin:0 0 16px; }
+section { padding:56px 0; border-top:1px solid var(--line); }
+.product { display:grid; grid-template-columns:auto 1fr auto; gap:20px; align-items:center; background:var(--card);
+  border:1px solid var(--line); border-radius:14px; padding:24px; text-decoration:none; transition:border-color .15s; }
+.product:hover { border-color:var(--fg); }
+.product img { width:56px; height:56px; display:block; }
+.product h3 { margin:0 0 4px; font-size:21px; font-weight:600; letter-spacing:-0.02em; }
+.product h3 span { font-weight:400; color:var(--muted); }
+.product p { margin:0; color:var(--muted); font-size:16px; }
+.product .go { font-size:15px; color:var(--signal-text); white-space:nowrap; }
+.cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; }
+.cols h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
+.cols p { margin:0; color:var(--muted); font-size:16px; }
+.bit { display:inline-block; width:4px; height:14px; border-radius:2px; background:var(--fg); margin-right:10px; vertical-align:-1px; }
+footer { padding:32px 0 48px; border-top:1px solid var(--line); font-size:14px; color:var(--faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
+@media (max-width:640px) {
+  .hero { padding:56px 0; } .hero picture img { margin-bottom:36px; }
+  .product { grid-template-columns:auto 1fr; align-items:start; } .product .go { grid-column:2; }
+  nav a { margin-left:16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="/"><img src="icon.svg" alt="">ampdat</a>
+  <nav><a href="https://control.ampdat.com">Control</a><a href="#about">About</a></nav>
+</header>
+
+<div class="hero">
+  <picture>
+    <source srcset="signal-on-dark.svg" media="(prefers-color-scheme: dark)">
+    <img src="signal-on-light.svg" alt="The word ampdat in binary, drawn as a signal with one bit amplified">
+  </picture>
+  <h1>Amplified data.</h1>
+  <p class="lede">Out of everything on chain, the one fact that matters, read from the source and checked before you rely on it.</p>
+</div>
+
+<section>
+  <h2>Products</h2>
+  <a class="product" href="https://control.ampdat.com">
+    <img src="icon.svg" alt="">
+    <div>
+      <h3>ampdat <span>control</span></h3>
+      <p>Who controls a DeFi vault, and what's waiting to change. A title search for every MetaMorpho vault on Ethereum, paid per call with x402.</p>
+    </div>
+    <span class="go">control.ampdat.com →</span>
+  </a>
+</section>
+
+<section id="about">
+  <h2>How we work</h2>
+  <div class="cols">
+    <div><h3><span class="bit"></span>From the chain</h3><p>Every answer starts with on-chain events and state, not someone else's summary.</p></div>
+    <div><h3><span class="bit"></span>Checked</h3><p>What we derive is checked against the contracts' own getters, with the evidence for each field.</p></div>
+    <div><h3><span class="bit"></span>Pay per answer</h3><p>No accounts or subscriptions. Agents and people pay for the call they make.</p></div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Ampdat LLC</span>
+  <span><a href="https://control.ampdat.com">Ampdat Control</a></span>
+</footer>
+</div>
+</body>
 </html>
