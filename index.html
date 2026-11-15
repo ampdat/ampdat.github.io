@@ -41,6 +41,11 @@ section { padding:56px 0; border-top:1px solid var(--line); }
 .product h3 span { font-weight:400; color:var(--muted); }
 .product p { margin:0; color:var(--muted); font-size:16px; }
 .product .go { font-size:15px; color:var(--signal-text); white-space:nowrap; }
+.ways { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; margin-top:32px; }
+.ways h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
+.ways p { margin:0; color:var(--muted); font-size:16px; }
+.ways a { color:var(--signal-text); text-decoration:none; } .ways a:hover { text-decoration:underline; }
+.ways code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; overflow-wrap:anywhere; }
 .cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; }
 .cols h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
 .cols p { margin:0; color:var(--muted); font-size:16px; }
@@ -58,7 +63,7 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
 <div class="wrap">
 <header>
   <a class="brand" href="/"><img src="icon.svg" alt="">ampdat</a>
-  <nav><a href="https://control.ampdat.com">Control</a><a href="#about">About</a></nav>
+  <nav><a href="https://control.ampdat.com">Control</a><a href="https://github.com/ampdat/control">Docs</a><a href="#about">About</a></nav>
 </header>
 
 <div class="hero">
@@ -76,10 +81,15 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
     <img src="icon.svg" alt="">
     <div>
       <h3>ampdat <span>control</span></h3>
-      <p>Who controls a DeFi vault, and what's waiting to change. A title search for every Morpho vault on Ethereum: free to read, paid per call for agents and apps.</p>
+      <p>Who controls a DeFi vault, and what's waiting to change. A title search for every Morpho vault on Ethereum, the Safes that hold their roles and the stablecoins they hold: free to read, paid per call for agents and apps.</p>
     </div>
     <span class="go">control.ampdat.com →</span>
   </a>
+  <div class="ways">
+    <div><h3>Read it</h3><p>A free page for every vault, coin and Safe at <a href="https://control.ampdat.com">control.ampdat.com</a>.</p></div>
+    <div><h3>Ask your assistant</h3><p>An MCP server for Claude, ChatGPT and other assistants, with free tools for who controls a contract and what is pending: <code>https://control.ampdat.com/mcp</code></p></div>
+    <div><h3>Build on it</h3><p>A paid API over x402 for agents and apps. The docs, the MCP setup and a Claude Code plugin are on <a href="https://github.com/ampdat/control">GitHub</a>.</p></div>
+  </div>
 </section>
 
 <section id="about">
@@ -93,7 +103,7 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
 
 <footer>
   <span>© 2026 Ampdat LLC</span>
-  <span><a href="https://control.ampdat.com">Ampdat Control</a> · <a href="https://control.ampdat.com/terms">Terms</a></span>
+  <span><a href="https://control.ampdat.com">Ampdat Control</a> · <a href="https://github.com/ampdat/control">Docs and MCP</a> · <a href="https://control.ampdat.com/terms">Terms</a></span>
 </footer>
 </div>
 <!-- Cloudflare Web Analytics: cookieless, no consent banner needed -->
