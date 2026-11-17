@@ -51,7 +51,6 @@ a.chip { color:var(--fg); text-decoration:none; } a.chip:hover { border-color:va
 .cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; }
 .cols h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
 .cols p { margin:0; color:var(--muted); font-size:16px; }
-.bit { display:inline-block; width:4px; height:14px; border-radius:2px; background:var(--fg); margin-right:10px; vertical-align:-1px; }
 footer { padding:32px 0 48px; border-top:1px solid var(--line); font-size:14px; color:var(--faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
 footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
 @media (max-width:640px) {
@@ -99,12 +98,12 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
 <section id="about">
   <h2>How we work</h2>
   <div class="cols">
-    <div><h3><span class="bit"></span>Verified source</h3><p>We recompile each contract from its published source and accept it only when the result matches the deployed bytecode exactly.</p></div>
-    <div><h3><span class="bit"></span>From the chain</h3><p>Every answer starts with on-chain events and state, not someone else's summary. Every read is kept, so any answer can be traced back.</p></div>
-    <div><h3><span class="bit"></span>Checked</h3><p>What we derive is checked against the contracts' own getters, with the evidence for each field.</p></div>
-    <div><h3><span class="bit"></span>Played forward</h3><p>On a fork of mainnet, the people we name can make the call and everyone else is refused. A queued change fails a second before the time we give, and goes through at it.</p></div>
-    <div><h3><span class="bit"></span>Fresh</h3><p>Refreshed from the chain every few minutes. Each answer carries the block it was read at, so you know exactly how current it is.</p></div>
-    <div><h3><span class="bit"></span>Pay per answer</h3><p>No accounts or subscriptions. Agents and people pay for the call they make.</p></div>
+    <div><h3>Verified source</h3><p>We recompile each contract from its published source and accept it only when the result matches the deployed bytecode exactly.</p></div>
+    <div><h3>From the chain</h3><p>Every answer starts with on-chain events and state, not someone else's summary. Every read is kept, so any answer can be traced back.</p></div>
+    <div><h3>Checked</h3><p>What we derive is checked against the contracts' own getters, with the evidence for each field.</p></div>
+    <div><h3>Played forward</h3><p>On a fork of mainnet, the people we name can make the call and everyone else is refused. A queued change fails a second before the time we give, and goes through at it.</p></div>
+    <div><h3>Fresh</h3><p>Refreshed from the chain every few minutes. Each answer carries the block it was read at, so you know exactly how current it is.</p></div>
+    <div><h3>Pay per answer</h3><p>No accounts or subscriptions. Agents and people pay for the call they make.</p></div>
   </div>
 </section>
 
