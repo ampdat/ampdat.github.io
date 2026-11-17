@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ampdat</title>
-<meta name="description" content="Ampdat builds data products that pull the one fact that matters out of everything on chain.">
+<meta name="description" content="See past the docs to what the code and keys actually do. Who controls the DeFi contracts you hold, and what is waiting to change, read from the chain and checked.">
 <link rel="icon" type="image/svg+xml" href="icon-small.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#16181d">
 <meta property="og:title" content="Ampdat">
-<meta property="og:description" content="Amplified data: the one bit that matters, out of everything on chain.">
+<meta property="og:description" content="See past the docs to what the code and keys actually do.">
 <meta property="og:image" content="https://www.ampdat.com/og-ampdat.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
@@ -39,7 +39,10 @@ section { padding:32px 0; border-top:1px solid var(--line); }
 .start p { margin:0; color:var(--muted); font-size:15px; flex:1; }
 .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
 .chip { font-size:12px; padding:2px 8px; border-radius:99px; border:1px solid var(--line); color:var(--muted); }
+a.chip { color:var(--fg); text-decoration:none; } a.chip:hover { border-color:var(--fg); }
 .chip.soon { border-style:dashed; color:var(--faint); }
+.soonrow { display:flex; flex-wrap:wrap; align-items:center; gap:6px; flex-basis:100%; }
+.soonlabel { font-size:12px; color:var(--faint); margin-right:2px; }
 .ways { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; margin-top:32px; }
 .ways h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
 .ways p { margin:0; color:var(--muted); font-size:16px; }
@@ -66,7 +69,7 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
 
 <div class="hero">
   <h1>Who controls it, and what's waiting to change.</h1>
-  <p class="lede">The roles, timelocks and queued changes behind the DeFi contracts you hold, read from the chain and checked before you rely on them.</p>
+  <p class="lede">See past the docs to what the code and keys actually do.</p>
 </div>
 
 <section>
@@ -75,7 +78,7 @@ footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
     <div class="start">
       <h3><a href="https://control.ampdat.com/vaults">Vault →</a></h3>
       <p>Who can change it, how much notice you get, and what is already queued.</p>
-      <div class="chips"><span class="chip">Morpho</span><span class="chip soon" title="Paper-tested, next to build">Aave v3</span><span class="chip soon" title="Paper-tested, next to build">SparkLend</span><span class="chip soon" title="Paper-tested, next to build">Compound v3</span></div>
+      <div class="chips"><a class="chip" href="https://control.ampdat.com/vaults">Morpho</a><span class="soonrow"><span class="soonlabel">Coming soon</span><span class="chip soon">Aave v3</span><span class="chip soon">SparkLend</span><span class="chip soon">Compound v3</span></span></div>
     </div>
     <div class="start">
       <h3><a href="https://control.ampdat.com/vaults#coins">Stablecoin →</a></h3>
