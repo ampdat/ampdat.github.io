@@ -4,116 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ampdat</title>
-<meta name="description" content="See past the docs to what the code and keys actually do. Who controls the DeFi contracts you hold, and what is waiting to change, read from the chain and checked.">
 <link rel="icon" type="image/svg+xml" href="icon-small.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#16181d">
-<meta property="og:title" content="Ampdat">
-<meta property="og:description" content="See past the docs to what the code and keys actually do.">
-<meta property="og:image" content="https://www.ampdat.com/og-ampdat.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
 <style>
-:root { --bg:#f6f5f0; --card:#ffffff; --fg:#16181d; --muted:#5f5e5a; --faint:#8a8983; --line:#e4e2da;
-  --signal:#ff4d2e; --signal-text:#c8371a; }
-@media (prefers-color-scheme: dark) { :root { --bg:#16181d; --card:#1f2127; --fg:#eceae4; --muted:#b4b2a9;
-  --faint:#888780; --line:#2c2e35; --signal-text:#ff6b4f; } }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif; }
-a { color:inherit; }
-.wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
-header { display:flex; align-items:center; justify-content:space-between; padding:22px 0; }
-.brand { display:flex; align-items:center; gap:10px; text-decoration:none; font-size:22px; font-weight:600; letter-spacing:-0.02em; }
-.brand img { width:32px; height:32px; display:block; }
-nav a { margin-left:24px; font-size:15px; color:var(--muted); text-decoration:none; }
-nav a:hover { color:var(--fg); }
-.hero { padding:20px 0 28px; }
-h1 { font-size:clamp(30px, 4.4vw, 48px); line-height:1.1; letter-spacing:-0.03em; font-weight:600; margin:0 0 16px; text-wrap:balance; }
-.lede { font-size:19px; color:var(--muted); max-width:38em; margin:0; }
-h2 { font-size:13px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--faint); margin:0 0 16px; }
-section { padding:32px 0; border-top:1px solid var(--line); }
-.starts { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
-.start { display:flex; flex-direction:column; gap:6px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; }
-.start h3 { margin:0; font-size:19px; font-weight:600; letter-spacing:-0.015em; }
-.start h3 a { color:var(--signal-text); text-decoration:none; } .start h3 a:hover { text-decoration:underline; }
-.start p { margin:0; color:var(--muted); font-size:15px; flex:1; }
-.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
-.chip { font-size:12px; padding:2px 8px; border-radius:99px; border:1px solid var(--line); color:var(--muted); }
-a.chip { color:var(--fg); text-decoration:none; } a.chip:hover { border-color:var(--fg); }
-.chip.soon { border-style:dashed; color:var(--faint); }
-.soonrow { display:flex; flex-wrap:wrap; align-items:center; gap:6px; flex-basis:100%; }
-.soonlabel { font-size:12px; color:var(--faint); margin-right:2px; }
-.ways { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; margin-top:32px; }
-.ways h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
-.ways p { margin:0; color:var(--muted); font-size:16px; }
-.ways a { color:var(--signal-text); text-decoration:none; } .ways a:hover { text-decoration:underline; }
-.ways code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; overflow-wrap:anywhere; }
-.cols { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; }
-.cols h3 { font-size:17px; font-weight:600; margin:0 0 6px; }
-.cols p { margin:0; color:var(--muted); font-size:16px; }
-footer { padding:32px 0 48px; border-top:1px solid var(--line); font-size:14px; color:var(--faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-footer a { text-decoration:none; } footer a:hover { color:var(--fg); }
-@media (max-width:640px) {
-  .hero { padding:12px 0 24px; } .starts { grid-template-columns:1fr; }
-  header { flex-wrap:wrap; row-gap:8px; } .brand { font-size:20px; } .brand img { width:28px; height:28px; }
-  nav a { margin-left:12px; font-size:14px; } nav a:first-child { margin-left:0; }
-}
+html, body { height:100%; margin:0; background:#000; }
+body { display:flex; align-items:center; justify-content:center; padding:0 16px; box-sizing:border-box; }
+img { width:min(363px, 80vw); height:auto; display:block; }
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <a class="brand" href="/"><img src="icon.svg" alt="">ampdat</a>
-  <nav><a href="https://control.ampdat.com">Control</a><a href="tutorial.html">Tutorial</a><a href="https://github.com/ampdat/control">Docs</a><a href="#about">About</a></nav>
-</header>
-
-<div class="hero">
-  <h1>Who controls it, and what's waiting to change.</h1>
-  <p class="lede">See past the docs to what the code and keys actually do.</p>
-</div>
-
-<section>
-  <h2>Start from what you hold</h2>
-  <div class="starts">
-    <div class="start">
-      <h3><a href="https://control.ampdat.com/vaults">Vault →</a></h3>
-      <p>Who can change it, how much notice you get, and what is already queued.</p>
-      <div class="chips"><a class="chip" href="https://control.ampdat.com/vaults">Morpho</a><span class="soonrow"><span class="soonlabel">Coming soon</span><span class="chip soon">Aave v3</span><span class="chip soon">SparkLend</span><span class="chip soon">Compound v3</span></span></div>
-    </div>
-    <div class="start">
-      <h3><a href="https://control.ampdat.com/vaults#coins">Stablecoin →</a></h3>
-      <p>Who can upgrade, mint, freeze and pause it, and who holds those keys.</p>
-    </div>
-    <div class="start">
-      <h3><a href="https://control.ampdat.com/vaults#safes">Safe →</a></h3>
-      <p>Its owners, how many must sign, and the modules that can act without them.</p>
-    </div>
-  </div>
-  <div class="ways">
-    <div><h3>Browse</h3><p>A free page for every vault, coin and Safe at <a href="https://control.ampdat.com">control.ampdat.com</a>.</p></div>
-    <div><h3>Integrate</h3><p>Ask from Claude, ChatGPT or Claude Code through the MCP server at <code>https://control.ampdat.com/mcp</code>. <a href="https://github.com/ampdat/control#connect">Connect</a> · <a href="https://github.com/ampdat/control/blob/main/docs/tools.md">Tools</a> · <a href="https://github.com/ampdat/control#the-skill">Claude Code plugin</a></p></div>
-    <div><h3>Operate</h3><p>A paid API over x402 for agents and apps: pay per call, no account or subscription required.</p></div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>How we work</h2>
-  <div class="cols">
-    <div><h3>Verified source</h3><p>We recompile each contract from its published source and accept it only when the result matches the deployed bytecode exactly.</p></div>
-    <div><h3>From the chain</h3><p>Every answer starts with on-chain events and state, not someone else's summary. Every read is kept, so any answer can be traced back.</p></div>
-    <div><h3>Checked</h3><p>What we derive is checked against the contracts' own getters, with the evidence for each field.</p></div>
-    <div><h3>Played forward</h3><p>On a fork of mainnet, the people we name can make the call and everyone else is refused. A queued change fails a second before the time we give, and goes through at it.</p></div>
-    <div><h3>Fresh</h3><p>Refreshed from the chain every few minutes. Each answer carries the block it was read at, so you know exactly how current it is.</p></div>
-    <div><h3>Pay per answer</h3><p>No accounts or subscriptions. Agents and people pay for the call they make.</p></div>
-  </div>
-</section>
-
-<footer>
-  <span>© 2026 Ampdat LLC</span>
-  <span><a href="https://control.ampdat.com">Ampdat Control</a> · <a href="https://github.com/ampdat/control">Docs and MCP</a> · <a href="https://control.ampdat.com/terms">Terms</a></span>
-</footer>
-</div>
-<!-- Cloudflare Web Analytics: cookieless, no consent banner needed -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "77011455a3bb4073b446c1e287e18f59"}'></script>
+<img src="signal-on-dark.svg" alt="Ampdat">
 </body>
 </html>
